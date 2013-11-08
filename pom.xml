@@ -21,10 +21,10 @@
 
     <organization>
         <!-- Used as the 'Vendor' for JNLP generation -->
-        <name>Xhats, Org.</name>
+        <name>Xhats, Ltd.</name>
     </organization>
     
-    <url>http://xhats.org</url>
+    <url>http://tmj.xhats.org</url>
     
     <developers>
         <developer>
