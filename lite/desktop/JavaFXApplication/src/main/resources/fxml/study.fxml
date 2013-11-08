@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?scenebuilder-preview-i18n-resource ../i18n.properties?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="-1.0" prefWidth="-1.0" styleClass="background" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="org.xhats.tmj.lite.desktop.javafxapplication.controller.StudyController">
+  <children>
+    <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="-1.0" prefWidth="-1.0" styleClass="top-segment" AnchorPane.bottomAnchor="80.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <VBox alignment="CENTER" spacing="5.0" AnchorPane.bottomAnchor="16.0" AnchorPane.leftAnchor="32.0" AnchorPane.rightAnchor="32.0" AnchorPane.topAnchor="16.0">
+          <children>
+            <HBox alignment="BASELINE_CENTER" disable="true" focusTraversable="false" visible="true">
+              <children>
+                <ImageView fitHeight="256.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@../images/tmj.png" />
+                  </image>
+                </ImageView>
+                <ImageView fx:id="goalImageView" fitHeight="256.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@../images/goal55.png" />
+                  </image>
+                </ImageView>
+              </children>
+            </HBox>
+            <GridPane hgap="15.0" maxWidth="-1.0" minHeight="-Infinity" minWidth="-Infinity" vgap="15.0">
+              <children>
+                <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" text="%as" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" text="%ss" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+                <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" text="%ps" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+                <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" text="%reason" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+                <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" text="%right" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                  <font>
+                    <Font size="12.0" fx:id="x1" />
+                  </font>
+                </Label>
+                <TextField fx:id="asrTextField" minHeight="-Infinity" minWidth="-Infinity" promptText="%asr.prompt" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                <TextField fx:id="ssrTextField" minHeight="-Infinity" minWidth="-Infinity" promptText="%ssr.prompt" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                <TextField fx:id="psrTextField" minHeight="-Infinity" minWidth="-Infinity" promptText="%psr.prompt" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                <TextArea fx:id="reasonTextArea" disable="false" editable="false" focusTraversable="false" maxHeight="-1.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="-1.0" promptText="%reason.prompt" wrapText="true" GridPane.columnIndex="1" GridPane.columnSpan="2147483647" GridPane.rowIndex="5" />
+                <Label font="$x1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" text="%left" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                <TextField fx:id="aslTextField" minHeight="-Infinity" minWidth="-Infinity" promptText="%asl.prompt" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                <TextField fx:id="sslTextField" minHeight="-Infinity" minWidth="-Infinity" promptText="%ssl.prompt" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                <TextField fx:id="pslTextField" minHeight="-Infinity" minWidth="-Infinity" promptText="%psl.prompt" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+              </children>
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="-Infinity" percentWidth="20.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="-1.0" minWidth="-Infinity" percentWidth="40.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="-1.0" minWidth="-Infinity" percentWidth="40.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+            </GridPane>
+          </children>
+        </VBox>
+      </children>
+    </AnchorPane>
+    <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" spacing="20.0" AnchorPane.bottomAnchor="16.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0">
+      <children>
+        <Button fx:id="consult" defaultButton="true" depthTest="INHERIT" font="$x1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#consult" prefHeight="-1.0" prefWidth="-1.0" text="%consult" textOverrun="WORD_ELLIPSIS" underline="false" />
+        <Button fx:id="reset" cancelButton="true" defaultButton="false" font="$x1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#reset" prefHeight="-1.0" prefWidth="-1.0" text="%reset" textOverrun="WORD_ELLIPSIS" HBox.hgrow="ALWAYS" />
+      </children>
+    </HBox>
+  </children>
+  <stylesheets>
+    <URL value="@../styles/styles.css" />
+  </stylesheets>
+</AnchorPane>
